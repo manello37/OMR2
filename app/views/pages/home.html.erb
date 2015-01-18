@@ -1,5 +1,11 @@
-<div class="jumbotron">
+<div class="jumbotron center">
 <h1>Welcome to Streamliner</h1>
 <p>Revolutionizing Sales Workflow</p>
-<p>Click here to <%= link_to "Sign Up", "#", class: "btn btn-primary btn-lg" %></p>
+
+	<% if user_signed_in? %>
+          # do something
+     	<% else %>
+			<%= link_to "Log in", new_user_session_path, class: "btn btn-default btn-lg" %>
+    		<%= link_to "Sign up", new_user_registration_path, class: "btn btn-primary btn-lg" %>
+    <% end %>
 </div>
