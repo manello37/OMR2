@@ -23,6 +23,8 @@ gem 'jquery-turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'masonry-rails'
 gem 'bootstrap-sass'
+gem 'will_paginate', '~> 3.0.5'
+gem 'will_paginate-bootstrap'
 
 gem 'devise'
 gem 'paperclip', github: 'thoughtbot/paperclip'
